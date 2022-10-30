@@ -24,4 +24,9 @@ class CashRegister
         end
     end
 
+    #instant method last_transaction
+    def void_last_transaction
+        self.total -= self.last_transaction
+    end
+
 end
